@@ -3,6 +3,10 @@
 I decided to use only one controller "ParticipantControler.cs". 
 It contains all the methods for the CRUD functionality, the Search functionality, and the Reporting functionality.
 
+There is also only one model "Participant.cs" with the fields or information from the database.
+
+As the table was already created, wasn't necessary to create any migrations or updates to the database, just to set the ConnectionString in "appsettings.json".
+
 These are the ones that correspond to CRUD:
 
 1. public IActionResult PostParticipant(string FirstName, string LastName, string Gender, DateTime BirthDate, string EmailAddress)
